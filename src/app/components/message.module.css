@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    width: 55vw;
+    padding: 1.5rem;
+}
+
+.sender{
+    font-size: large;
+    font-weight: bolder;
+    color: var(--text2);
+}
+
+.content{
+    font-size: medium;
+}

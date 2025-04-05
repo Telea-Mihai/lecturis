@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 10rem;
+    width: 70vw;
+    gap:1rem;
+    padding: 4rem;
+}
+
+@media only screen and (max-width: 876px){
+    .container{
+        width: 100vw;
+    }
+}

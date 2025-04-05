@@ -1,0 +1,79 @@
+:root{
+  --background: #1c2742;
+  --text: #e4e4e4;
+  --text2: #dccfb8;
+  --highlight: #294691;
+  --secundary: #272727;
+  --border: #777777;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background : var(--background);
+  background-image: radial-gradient(var(--highlight) 0.2rem, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+  animation: move-background 100s linear infinite;
+  color: var(--text);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Monaco, monospace;
+}
+
+@keyframes move-background {
+  to {
+    background-position: right;
+  }
+}
+
+.bodyContent{
+  margin-top: 4rem;
+}
+
+.mainButton{
+  padding: 1rem 1.5rem;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 4rem;
+  background-color: var(--secundary);
+  color: var(--text);
+  border: 0.2rem solid var(--border);
+  transition: 0.5s;
+}
+
+.mainButton:hover{
+  transform: scale(1.1);
+  color: var(--text2);
+}
+
+.mainButton:active{
+  transform: scale(0.9);
+}
+
+.mainButton:disabled{
+  opacity: 0.6;
+}
+
+.open{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.closed{
+  height: 0;
+}
+
+.container{
+  padding: 1rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

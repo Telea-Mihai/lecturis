@@ -1,0 +1,117 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 75vw;
+    gap:1rem;
+    padding: 0.5rem;
+    margin-top:5rem;
+    background-color: #1c1c1c;
+    border-radius: 4rem;
+    animation: fadeIn 1s;
+    padding-bottom: 4rem;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem
+}
+
+.textContainer{
+    text-align: left;
+    max-height: 80vh;
+    width: 70vw;
+    display: flex;
+    border: var(--border) solid 0.3rem;
+    border-radius: 4rem;
+    padding: 1rem;
+    overflow-y:auto;
+}
+
+.header{
+    border-bottom: 0.3rem solid var(--text2);
+    margin-bottom: 4rem;
+    color: var(--text2);
+}
+
+.container button[type='submit'] {
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    height: 6.2rem;
+    font-size: large;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    color: var(--text);
+    background-color: var(--secundary);
+    transition: 0.5s;
+    border:none;
+}
+
+.container button[type='submit']:hover {
+    color: var(--text2);
+    background-color: var(--background);
+}
+
+.container button[type='submit']:active {
+    color: var(--text);
+}
+
+.container input[type='text']{
+    height: 4rem;
+    padding: 1rem;
+    border-bottom-left-radius: 4rem;
+    border-top-left-radius: 4rem;
+    width: 55vw;
+    color: var(--text);
+    background-color: var(--secundary);
+    border:solid 0.2rem var(--border);
+}
+
+.sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+    border-bottom: 0.1rem solid var(--text2);
+    border-top: 0.1rem solid var(--text2);
+    padding: 1rem 0rem;
+}
+
+.sectionHeader .title{
+    display: flex;
+    gap: 3rem;
+}
+
+.dropButton{
+    background-color: var(--secundary);
+    color: var(--text2);
+    width: 5rem;
+    border-radius: 2rem;
+    border: solid 0.2rem var(--border);
+    font-size: x-large;
+}
+
+.area textarea{
+    width: 70vw;
+    min-height: 20rem;
+    max-height: 80vh;
+    padding: 2rem;
+    border-radius: 4rem;
+}
+
+@media only screen and (max-width: 876px){
+    .container{
+        width: 100vw;
+        padding: 2rem;
+    }
+}
+

@@ -1,0 +1,71 @@
+.navBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--secundary);
+    color: var(--text);
+    padding-inline: 1rem;
+    z-index: 10;
+}
+
+.homeBut{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 800;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0.2rem 0.05rem;
+}
+
+.homeBut img{
+    width: auto;
+    height: 5rem;
+}
+
+.sideBar{
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--secundary);
+    border-top: solid 0.3rem var(--border);
+    z-index: 100;
+}
+
+.container{
+    z-index: 1000;
+}
+
+.closed{
+    transition: 0.5s;
+    position: fixed;
+    left: -100vw;
+    top: 5.5rem;
+}
+
+.open{
+    transition: 0.5s;
+    position: fixed;
+    top: 5.5rem;
+    left: 0;
+}
+
+.sideBar button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: var(--border) solid 0.3rem;
+    font-size: x-large;
+    padding: 1rem 5rem;
+    font-weight: 800;
+    color: var(--text2);
+    transition: 0.5s;
+}
+
+.sideBar button:hover{
+    box-shadow: inset 0px 0px 26px 0px rgba(0,0,0,0.75);
+    color: white;
+}
